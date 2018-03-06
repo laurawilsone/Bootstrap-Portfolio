@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Bootstrap-Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="bootstrap-style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
     <script src="main.js"></script>
@@ -25,13 +25,13 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="bootstrap-index.html">About</a>
+                        <a href="index.html">About</a>
                     </li>
                     <li>
-                        <a href="bootstrap-portfolio.html">Portfolio</a>
+                        <a href="portfolio.html">Portfolio</a>
                     </li>
                     <li>
-                        <a href="bootstrap-contact.html">Contact</a>
+                        <a href="contact.html">Contact</a>
                     </li>
 
                 </ul>
@@ -43,30 +43,31 @@
     </header>
     <div class="container">
         <div class="row">
-            <div class="col-sm-8">
+            <div class="col-md-8">
                 <div class="page-header">
-                    <h1>About me</h1>
-                </div>
-                <div class="row">
-                    <div class="col-sm-3">
-                        <img src="https://avatars3.githubusercontent.com/u/35203224?s=460&v=4" class="thumbnail">
-                    </div>
-                    <div class="col-sm-9">
-                        <div class="caption">
-                            <p>I am a Fort Worth native currently living in Dallas. I studied Nutritional Sciences at Oklahoma
-                                State University. I currently work as a sales consultant at Brandon Industries in Mckinney,
-                                TX. I love running, boxing, tacos and golden retrievers.'Cause, baby, now we got bad blood
-                                You know it used to be mad love So take a look what you've done 'Cause, baby, now we got
-                                bad blood Hey Now we got problems And I don't think we can solve them You made a really deep
-                                cut And, baby, now we got bad blood Hey 'Cause, baby, now we got bad blood You know it used
-                                to be mad lov So take a look what you've done 'Cause, baby, now we got bad blood Hey Now
-                                we got problems And I don't think we can solve them You made a really deep cut And, baby,
-                                now we got bad blood Hey</p>
-                        </div>
-                    </div>
+                    <h1>Contact</h1>
+                    <form id="Contact">
+                        <ul>
+                            <li>
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="name" placeholder="Taylor Swift" required="required">
+                            </li>
+                            <li>
+                                <label for="email">Email</label>
+                                <input type="text" name="email" id="email" placeholder="taylorswift@gmail.com" required="required">
+                            </li>
+                            <li>
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message" required="required"></textarea>
+                            </li>
+                        </ul>
+                        <input type="submit" name="submit">
+                    </form>
+
                 </div>
             </div>
-            <div class="col-sm-4">
+
+            <div class="col-md-4">
                 <div class="boxtwo">
                     <div id="connect">
                         <h3>Connect with Me</h3>
@@ -85,7 +86,6 @@
             </div>
         </div>
     </div>
-    </div>
 
     <footer class="page-footer font-small blue pt-4 mt-4">
 
@@ -98,7 +98,6 @@
 
 
     </footer>
-
 
 </body>
 
